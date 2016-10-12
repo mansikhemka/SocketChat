@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/jquery.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+    <style>
+        body{
+            height: 700px;
+            background-image: url("/d3fb72f5abc0908a49591567cc84c3c7.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            z-index: -1;
+            color: #2b542c;
+            font-weight: bold;
+        }
+        input {
+            width: 80%;
+            font-weight: 200;
+            /*margin-top: 640px;*/
+            /*position: absolute;*/
+            /*z-index: 9999;*/
+            /*}*/
+        }
+        button{
+            width: 18.5%;
+            /*margin-top: 640px;*/
+            /*margin-left: 81%;*/
+            /*position: absolute;*/
+            /*z-index: 9999;*/
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            /*height: 1000px;*/
+        }
+    </style>
+</head>
+<body>
+
+    <input id="username" placeholder="ENTER YOUR NAME HERE" type="text">
+    <button id="adduser" class="btn btn-primary"><span class="glyphicon glyphicon-user"></span></button>
+    <br>
+<br>
+    <input id="message" placeholder="ENTER YOUR MESSAGE HERE" type="text">
+    <button id="send" class="btn btn-primary"><span class="glyphicon glyphicon-envelope"></span></button>
+    <ul class="receivehere"></ul>
+
+</body>
+</html>
